@@ -1,0 +1,27 @@
+analysis-paths:
+- analysis
+clean-targets:
+- target
+- dbt_modules
+- logs
+config-version: 2
+macro-paths:
+- macros
+model-paths:
+- models
+models:
+  jaffle_shop:
+    materialized: table
+    staging:
+      materialized: view
+name: jaffle_shop9
+profile: jaffle_shop
+require-dbt-version:
+- '>=1.0.0'
+- <2.0.0
+seed-paths:
+- seeds
+target-path: target
+test-paths:
+- tests
+version: '0.1'
